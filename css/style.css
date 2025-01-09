@@ -293,6 +293,8 @@ body {
           flex: 0 0 3rem;
   background-color: var(--light-green);
   border-radius: 50%;
+  -webkit-transition: background-color 0.5s ease 0s;
+  transition: background-color 0.5s ease 0s;
 }
 
 .callback {
@@ -306,6 +308,8 @@ body {
   line-height: 86%;
   text-align: center;
   background-color: var(--light-green);
+  -webkit-transition: background-color 0.5s ease 0s, color 0.5s ease 0s;
+  transition: background-color 0.5s ease 0s, color 0.5s ease 0s;
 }
 
 .subtitle {
@@ -368,6 +372,8 @@ body {
   background: #15a178;
   border-radius: 60px;
   padding: 23px 20px 23px 20px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .button span {
@@ -413,6 +419,8 @@ body {
   line-height: 112%;
   letter-spacing: 0.02em;
   text-align: center;
+  -webkit-transition: color 0.5s ease 0s;
+  transition: color 0.5s ease 0s;
 }
 
 .button-icon_green {
@@ -437,6 +445,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: background-color 0.5s ease 0s;
+  transition: background-color 0.5s ease 0s;
 }
 
 .green-text-color {
@@ -505,23 +515,50 @@ body {
   transition: background 0.5s ease 0s;
 }
 
-/*
-.page {
-	&__container {
-		position: relative;
-		&::after {
-			content: "";
-			position: absolute;
-			top: 416px;
-			left: 0;
-			width: 1285px;
-			height: 9117px;
-			background: url("../img/decors/decor-line.svg") 0 0 no-repeat;
-			z-index: -1;
-		}
-	}
+@-webkit-keyframes fadeinup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 20%);
+            transform: translate(0, 20%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }
-*/
+
+@keyframes fadeinup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 20%);
+            transform: translate(0, 20%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+.loaded [fadeinup]._watcher-view {
+  -webkit-animation: fadeinup 1s ease-in-out forwards;
+          animation: fadeinup 1s ease-in-out forwards;
+}
+
+[fadeinup] {
+  opacity: 0;
+  /* Start with opacity 0 */
+  -webkit-transform: translate(0, 20%);
+      -ms-transform: translate(0, 20%);
+          transform: translate(0, 20%);
+  /* Start with the initial transform */
+  -webkit-transition: opacity 0s;
+  transition: opacity 0s;
+  /* Prevent intermediate visibility before animation starts */
+}
 
 .header {
   position: fixed;
@@ -585,8 +622,8 @@ body {
   border-radius: 3.75rem;
   padding: 1.125rem 1.5625rem;
   background: rgba(248, 248, 248, 0.11);
-  -webkit-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+  -webkit-transition: background-color 0.5s ease 0s;
+  transition: background-color 0.5s ease 0s;
 }
 
 .menu__button {
@@ -708,6 +745,8 @@ body {
 .content-hero__title {
   font-size: 1.625rem;
   line-height: 110%;
+  position: relative;
+  z-index: 21;
   letter-spacing: 0.02em;
 }
 
@@ -886,6 +925,8 @@ body {
 }
 
 .reviews__navigation button {
+  -webkit-transition: background-color 0.5s ease 0s;
+  transition: background-color 0.5s ease 0s;
   pointer-events: all;
 }
 
@@ -1114,6 +1155,7 @@ body {
 }
 
 .art__info {
+  overflow: hidden;
   background: #15a078;
   border-radius: 1.375rem;
   padding: 2.9375rem 4.8125rem 3.3125rem 4.8125rem;
@@ -1288,6 +1330,8 @@ body {
       -ms-flex: 0 0 4.0625rem;
           flex: 0 0 4.0625rem;
   background-color: #4c4c4c;
+  -webkit-transition: background-color 0.5s ease 0s;
+  transition: background-color 0.5s ease 0s;
 }
 
 .experts__navigation .navigation__prev-button_experts {
@@ -2397,8 +2441,8 @@ body {
   .art__info::after {
     content: "";
     position: absolute;
-    top: 27px;
-    right: -16px;
+    top: 17px;
+    right: 20px;
     background: url("../img/decors/baloon.svg") 0 0 no-repeat;
     width: 181px;
     height: 408px;
@@ -3668,4 +3712,65 @@ body {
       font-size: calc(3.125rem + 1.25 * (100vw - 23.4375rem) / 67.8125);
     }
 }
+}
+
+@media (any-hover: hover) {
+  .social li a:hover {
+    background-color: #fff;
+  }
+
+  .social li a:hover .icon-social-whatsapp {
+    background: #6a2891;
+  }
+
+  .social li a:hover .icon-social-telegram {
+    background: #6a2891;
+  }
+
+  .button_blue:hover {
+    background: rgba(74, 140, 255, 0.3960784314);
+  }
+
+  .button_yellow:hover {
+    background: rgba(180, 221, 98, 0.7098039216);
+  }
+
+  .button-icon:hover {
+    background-color: #fff;
+  }
+
+  .button-icon:hover span {
+    color: #6a2891;
+  }
+
+  .button-icon:hover .button-icon__body {
+    background-color: #6a2891;
+  }
+
+  .button-icon:hover .whatsapp-icon {
+    background-color: #fff;
+  }
+
+  .menu__link:hover {
+    background-color: #6a2891;
+  }
+
+  .reviews__navigation button:hover {
+    background-color: #6a2891;
+  }
+
+  .reviews__navigation button:hover .review-arrow-icon {
+    background: #fff;
+  }
+
+  .experts__navigation button:hover {
+    background-color: #6a2891;
+  }
+}
+
+@media (any-hover: hover) and (any-hover: hover) {
+  .callback:hover:hover {
+    background-color: #fff;
+    color: #6a2891;
+  }
 }
