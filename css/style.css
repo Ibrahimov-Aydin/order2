@@ -130,6 +130,72 @@ h6 {
   font-size: inherit;
 }
 
+.page {
+  position: relative;
+}
+
+.page__wrapper {
+  position: relative;
+}
+
+.main-left {
+  position: absolute;
+  top: -63px;
+  left: -131px;
+  z-index: 1;
+}
+
+.main-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.benefits-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.benefits-right {
+  position: absolute;
+  bottom: -220px;
+  right: 0;
+}
+
+.format-center {
+  position: absolute;
+  top: -4%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.inner-decor-right {
+  position: absolute;
+  right: 0;
+  bottom: -7%;
+}
+
+.inner-decor-left {
+  position: absolute;
+  top: 5%;
+  left: 0;
+}
+
+.master-decor-left {
+  position: absolute;
+  top: -31%;
+  left: 0;
+}
+
+.master-decor-right {
+  position: absolute;
+  top: -54%;
+  right: 0;
+}
+
 body {
   background-color: var(--black);
 }
@@ -605,6 +671,7 @@ body {
   padding-top: 10.8125rem;
   padding-bottom: 4.75rem;
   position: relative;
+  z-index: 5;
 }
 
 .hero__title {
@@ -746,6 +813,8 @@ body {
 }
 
 .reviews {
+  position: relative;
+  z-index: 5;
   padding-bottom: 8.5625rem;
 }
 
@@ -902,6 +971,8 @@ body {
 
 .art {
   padding-bottom: 5.5rem;
+  position: relative;
+  z-index: 5;
 }
 
 .art__subtitle {
@@ -1081,6 +1152,8 @@ body {
 }
 
 .author {
+  position: relative;
+  z-index: 5;
   padding-bottom: 8.6875rem;
 }
 
@@ -1178,6 +1251,8 @@ body {
 }
 
 .experts {
+  position: relative;
+  z-index: 5;
   padding-top: 5.3125rem;
   padding-bottom: 6.875rem;
 }
@@ -1302,6 +1377,8 @@ body {
 }
 
 .master-course {
+  position: relative;
+  z-index: 5;
   padding-bottom: 134px;
 }
 
@@ -1438,6 +1515,8 @@ body {
 .order-training {
   padding-top: 100px;
   padding-bottom: 117px;
+  position: relative;
+  z-index: 5;
 }
 
 .order-training__container {
@@ -1496,6 +1575,8 @@ body {
 }
 
 .payment {
+  position: relative;
+  z-index: 5;
   background: #222938;
   border-radius: 1.25rem;
   padding: 2.5rem 1.25rem 3.4375rem 1.25rem;
@@ -1531,6 +1612,8 @@ body {
 
 .join {
   padding-bottom: 100px;
+  position: relative;
+  z-index: 5;
 }
 
 .join__wrapper {
@@ -1594,6 +1677,8 @@ body {
 .teachers {
   padding-top: 20px;
   padding-bottom: 44px;
+  position: relative;
+  z-index: 5;
 }
 
 .teachers__subtitle {
@@ -1680,6 +1765,11 @@ body {
   text-align: center;
 }
 
+.benefits {
+  position: relative;
+  z-index: 5;
+}
+
 .benefits__subtitle {
   font-size: 4.375rem;
   line-height: 120%;
@@ -1759,6 +1849,48 @@ body {
   background-color: rgba(84, 84, 212, 0.1);
 }
 
+.benefits__icon_blue {
+  background-color: rgba(84, 84, 212, 0.1);
+}
+
+.benefits__icon_blue .phone-icon {
+  background-color: rgb(84, 84, 212);
+}
+
+.benefits__icon_yellow {
+  background-color: rgba(254, 220, 90, 0.1);
+}
+
+.benefits__icon_yellow .phone-icon {
+  background-color: rgb(254, 220, 90);
+}
+
+.benefits__icon_red {
+  background-color: rgba(240, 64, 55, 0.1);
+}
+
+.benefits__icon_red .phone-icon {
+  background-color: rgb(240, 64, 55);
+}
+
+.benefits__icon_green {
+  background-color: rgba(119, 191, 65, 0.1);
+}
+
+.benefits__icon_green .phone-icon {
+  background-color: rgb(119, 191, 65);
+}
+
+.benefits__icon img {
+  width: 3.4375rem;
+  height: 3.4375rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .benefits__descr {
   font-size: 1.3125rem;
   text-align: center;
@@ -1767,8 +1899,19 @@ body {
   margin: 0 auto;
 }
 
+.phone-icon {
+  aspect-ratio: 1/1;
+  width: 16px;
+  height: 22px;
+  width: var(--size);
+  mask: var(--icon) center center/contain no-repeat;
+  -webkit-mask: var(--icon) center center/contain no-repeat;
+}
+
 .program {
   padding-bottom: 5.8125rem;
+  position: relative;
+  z-index: 5;
 }
 
 .program__content {
@@ -2063,6 +2206,11 @@ body {
   color: #a3a3a3;
 }
 
+.format {
+  position: relative;
+  z-index: 5;
+}
+
 .format__title {
   font-size: 3.4375rem;
   line-height: 124%;
@@ -2281,6 +2429,35 @@ body {
   }
 }
 
+@media (min-width: 90em) {
+  .page__container {
+    position: relative;
+  }
+
+  .page__container::before {
+    content: "";
+    position: absolute;
+    top: 416px;
+    left: 0;
+    background: url("../img/decors/decor-line.svg") 0 0 no-repeat;
+    width: 1285px;
+    height: 9117px;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 90em) {
+  .benefits-right,
+  .benefits-left,
+  .format-center,
+  .master-decor-left,
+  .master-decor-right,
+  .inner-decor-left,
+  .inner-decor-right {
+    display: none;
+  }
+}
+
 @media (max-width: 75em) {
   .hero__image {
     max-width: 100%;
@@ -2441,6 +2618,18 @@ body {
 
   .join__wrapper {
     padding: 3.75rem;
+  }
+}
+
+@media (max-width: 84.125em) {
+  .main-left {
+    top: -2%;
+    left: -20%;
+  }
+
+  .main-right {
+    top: -2%;
+    right: -20%;
   }
 }
 
@@ -3020,6 +3209,15 @@ body {
 }
 
 @media (max-width: 47.99875em) {
+  .main-left {
+    top: -3%;
+  }
+
+  .main-right {
+    right: -50%;
+    top: -1.1%;
+  }
+
   .callback {
     font-size: 0.875rem;
     -webkit-box-flex: 1;
@@ -3168,6 +3366,10 @@ body {
   .experts {
     padding-top: 6.0625rem;
     padding-bottom: 1.4375rem;
+  }
+
+  .master-course {
+    padding-bottom: 1.9375rem;
   }
 
   .master-course {

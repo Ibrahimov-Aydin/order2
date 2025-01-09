@@ -5,7 +5,7 @@
 	<title>HomePage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250109133451">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250109153441">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -45,6 +45,7 @@
 			</div>
 		</header>
 		<main class="page">
+			<div class="page__container"></div>
 			<section class="hero">
 				<div class="hero__container">
 					<div class="hero__header">
@@ -102,88 +103,115 @@
 					</div>
 				</div>
 			</section>
-			<section class="author">
-				<div class="author__container">
-					<div class="author__image">
-						<picture><source srcset="img/author/01.webp" type="image/webp"><img src="img/author/01.jpg" alt="image"></picture>
+			<div class="page__wrapper">
+				<section class="author">
+					<div class="author__container">
+						<div class="author__image">
+							<picture><source srcset="img/author/01.webp" type="image/webp"><img src="img/author/01.jpg" alt="image"></picture>
+						</div>
+						<div class="author__title">Анастасия Христова</div>
+						<p class="author__text">Известный в Европе театральный режиссер и педагог,   тренер по публичным
+							выступлениям, актриса. Училась у  лучших
+							мастеров Лондона, Мадрида, Праги. Вместе со специалистами в области психологии и сценического
+							искусства   разработала
+							уникальную методику живого общения с учениками, которое даст вам множество навыков успешной
+							самопрезентации</p>
+
+						<div class="video-container">
+							<button class="load-video-btn" data-video-id="z2Bbm1Jr0mI">
+								<img src="img/icons/play.svg" alt="icon:play">
+							</button>
+							<div class="video-placeholder"></div>
+						</div>
+
+
 					</div>
-					<div class="author__title">Анастасия Христова</div>
-					<p class="author__text">Известный в Европе театральный режиссер и педагог,   тренер по публичным
-						выступлениям, актриса. Училась у  лучших
-						мастеров Лондона, Мадрида, Праги. Вместе со специалистами в области психологии и сценического
-						искусства   разработала
-						уникальную методику живого общения с учениками, которое даст вам множество навыков успешной
-						самопрезентации</p>
-
-					<div class="video-container">
-						<button class="load-video-btn" data-video-id="z2Bbm1Jr0mI">
-							<img src="img/icons/play.svg" alt="icon:play">
-						</button>
-						<div class="video-placeholder"></div>
+				</section>
+				<section class="benefits">
+					<div class="benefits__container">
+						<h2 class="benefits__subtitle">Кому будет полезен этот курс?</h2>
+						<ul class="benefits__list">
+							<li>
+								<div class="benefits__icon">
+									<img src="img/benefits/01.svg" alt="icon">
+								</div>
+								<span>Журналистам</span>
+							</li>
+							<li>
+								<div class="benefits__icon benefits__icon_blue">
+									<span class="phone-icon" style="--icon: url(../img/icons/phone-icon.svg)"></span>
+								</div>
+								<span>Артистам-любителям</span>
+							</li>
+							<li>
+								<div class="benefits__icon benefits__icon_yellow">
+									<span class="phone-icon" style="--icon: url(../img/icons/phone-icon.svg)"></span>
+								</div>
+								<span>Педагогам и психологам</span>
+							</li>
+							<li>
+								<div class="benefits__icon benefits__icon_blue">
+									<span class="phone-icon" style="--icon: url(../img/icons/phone-icon.svg)"></span>
+								</div>
+								<span>Ораторам и бизнес-руководителям</span>
+							</li>
+							<li>
+								<div class="benefits__icon benefits__icon_red">
+									<span class="phone-icon" style="--icon: url(../img/icons/phone-icon.svg)"></span>
+								</div>
+								<span>Представителям торговой индустрии</span>
+							</li>
+							<li>
+								<div class="benefits__icon">
+									<img src="img/benefits/01.svg" alt="icon">
+								</div>
+								<span>Блогерам</span>
+							</li>
+							<li>
+								<div class="benefits__icon benefits__icon_green">
+									<span class="phone-icon" style="--icon: url(../img/icons/phone-icon.svg)"></span>
+								</div>
+								<span>Гидам и стендап-комикам</span>
+							</li>
+							<li>
+								<div class="benefits__icon benefits__icon_blue">
+									<span class="phone-icon" style="--icon: url(../img/icons/phone-icon.svg)"></span>
+								</div>
+								<span>Специалистам, работающим онлайн</span>
+							</li>
+						</ul>
+						<p class="benefits__descr">
+							Всем тем, кто хочет улучшить свои коммуникативные навыки, профессионалам, часто выступающим на конференциях и
+							вебинарах.
+						</p>
 					</div>
-
-
-				</div>
-			</section>
-			<section class="benefits">
-				<div class="benefits__container">
-					<h2 class="benefits__subtitle">Кому будет полезен этот курс?</h2>
-					<ul class="benefits__list">
-						<li>
-							<div class="benefits__icon">
-								<img src="img/icons/phone.svg" alt="icon">
-							</div>
-							<span>Журналистам</span>
-						</li>
-						<li>
-							<div class="benefits__icon">
-								<img src="img/icons/phone.svg" alt="icon">
-							</div>
-							<span>Артистам-любителям</span>
-						</li>
-						<li>
-							<div class="benefits__icon">
-								<img src="img/icons/phone.svg" alt="icon">
-							</div>
-							<span>Педагогам и психологам</span>
-						</li>
-						<li>
-							<div class="benefits__icon">
-								<img src="img/icons/phone.svg" alt="icon">
-							</div>
-							<span>Ораторам и бизнес-руководителям</span>
-						</li>
-						<li>
-							<div class="benefits__icon">
-								<img src="img/icons/phone.svg" alt="icon">
-							</div>
-							<span>Представителям торговой индустрии</span>
-						</li>
-						<li>
-							<div class="benefits__icon">
-								<img src="img/icons/phone.svg" alt="icon">
-							</div>
-							<span>Блогерам</span>
-						</li>
-						<li>
-							<div class="benefits__icon">
-								<img src="img/icons/phone.svg" alt="icon">
-							</div>
-							<span>Гидам и стендап-комикам</span>
-						</li>
-						<li>
-							<div class="benefits__icon">
-								<img src="img/icons/phone.svg" alt="icon">
-							</div>
-							<span>Специалистам, работающим онлайн</span>
-						</li>
-					</ul>
-					<p class="benefits__descr">
-						Всем тем, кто хочет улучшить свои коммуникативные навыки, профессионалам, часто выступающим на конференциях и
-						вебинарах.
-					</p>
-				</div>
-			</section>
+				</section>
+				<!-- decors -->
+				<svg class="benefits-left" width="1107" height="1638" viewBox="0 0 1107 1638" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g filter="url(#filter0_f_1_478)">
+						<circle cx="419" cy="419" r="419" transform="matrix(-1 0 0 1 707 400)" fill="#468875" />
+					</g>
+					<defs>
+						<filter id="filter0_f_1_478" x="-531" y="0" width="1638" height="1638" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+							<feFlood flood-opacity="0" result="BackgroundImageFix" />
+							<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+							<feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_1_478" />
+						</filter>
+					</defs>
+				</svg>
+				<svg class="benefits-right" width="869" height="1638" viewBox="0 0 869 1638" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g filter="url(#filter0_f_1_477)">
+						<circle cx="419" cy="419" r="419" transform="matrix(-1 0 0 1 1238 400)" fill="#6A2891" fill-opacity="0.77" />
+					</g>
+					<defs>
+						<filter id="filter0_f_1_477" x="0" y="0" width="1638" height="1638" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+							<feFlood flood-opacity="0" result="BackgroundImageFix" />
+							<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+							<feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_1_477" />
+						</filter>
+					</defs>
+				</svg>
+			</div>
 			<section class="achievements">
 				<div class="achievements__container">
 					<h2 class="achievements__title">Ваши достижения после завершения курса</h2>
@@ -271,42 +299,56 @@
 					</div>
 				</div>
 			</section>
-			<section class="format">
-				<div class="format__container">
-					<h2 class="format__title">
-						Занятия проходят в формате реальных онлайн встреч в <span>ZOOM</span>. Запись урока доступна по ссылке в
-						течении обучающего курса.
-					</h2>
-					<div class="format__image">
-						<img src="img/format/01.svg" alt="image">
-					</div>
-					<div class="format__homework homework">
-						<div class="homework__wrapper">
-							<div class="homework__icon">
-								<img src="img/format/telegram-icon.svg" alt="icon">
-							</div>
-							<div class="homework__body">
-								<div class="homework__label">Домашнее задание</div>
-								<p class="homework__text">
-									В Telegram/WhatsApp канале вас ждёт отдельная группа для домашнего задания.
-									Эта группа -  ваша дополнительная платформа для тренинга публичных выступлений на время прохождения
-									курса. Ученики
-									получают задания и в течении недели высылают их в группу. Задания видят все студенты  и тренер.
-									Все домашние задания сопровождаются обратной связью.
-								</p>
-							</div>
-							<div class="homework__action">
-								<button class="homework__button-icon button-icon button-icon_green">
-									<span>Записаться <br> на онлайн курс</span>
-									<div class="button-icon__body">
-										<span class="whatsapp-icon" style="--icon: url(../img/icons/whatsapp-colorful.svg)"></span>
-									</div>
-								</button>
+			<div class="page__wrapper">
+				<section class="format">
+					<div class="format__container">
+						<h2 class="format__title">
+							Занятия проходят в формате реальных онлайн встреч в <span>ZOOM</span>. Запись урока доступна по ссылке в
+							течении обучающего курса.
+						</h2>
+						<div class="format__image">
+							<img src="img/format/01.svg" alt="image">
+						</div>
+						<div class="format__homework homework">
+							<div class="homework__wrapper">
+								<div class="homework__icon">
+									<img src="img/format/telegram-icon.svg" alt="icon">
+								</div>
+								<div class="homework__body">
+									<div class="homework__label">Домашнее задание</div>
+									<p class="homework__text">
+										В Telegram/WhatsApp канале вас ждёт отдельная группа для домашнего задания.
+										Эта группа -  ваша дополнительная платформа для тренинга публичных выступлений на время прохождения
+										курса. Ученики
+										получают задания и в течении недели высылают их в группу. Задания видят все студенты  и тренер.
+										Все домашние задания сопровождаются обратной связью.
+									</p>
+								</div>
+								<div class="homework__action">
+									<button class="homework__button-icon button-icon button-icon_green">
+										<span>Записаться <br> на онлайн курс</span>
+										<div class="button-icon__body">
+											<span class="whatsapp-icon" style="--icon: url(../img/icons/whatsapp-colorful.svg)"></span>
+										</div>
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+				<svg class="format-center" width="1920" height="2179" viewBox="0 0 1920 2179" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g filter="url(#filter0_f_1_771)">
+						<circle cx="961.5" cy="1089.5" r="534.5" fill="#4C1D68" fill-opacity="0.8" />
+					</g>
+					<defs>
+						<filter id="filter0_f_1_771" x="-128" y="0" width="2179" height="2179" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+							<feFlood flood-opacity="0" result="BackgroundImageFix" />
+							<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+							<feGaussianBlur stdDeviation="277.5" result="effect1_foregroundBlur_1_771" />
+						</filter>
+					</defs>
+				</svg>
+			</div>
 			<section class="experts">
 				<div class="experts__container">
 					<h2 class="experts__title">На курсе вас ждут две встречи с приглашёнными экспертами</h2>
@@ -426,109 +468,161 @@
 					</div>
 				</div>
 			</section>
-			<section class="master-course">
-				<div class="master-course__container">
-					<div class="master-course__content">
-						<div class="master-course__label">Мастер курса</div>
-						<div class="master-course__name">Анастасия Христова</div>
-						<p class="master-course__text">
-							Театральный режиссёр, актриса и независимый автор документального кино. Основатель продюсерской
-							компании PointProduction
-							и Семейного Театра Колыбель. Гастролирующая актриса и тренер по публичным выступлениям в
-							бизнес-сообществах и
-							театральных школах. Проводит тренинги по клоунаде для артистов. Также ведет курс по коммуникации,
-							основанный на
-							театральных методах взаимодействия с аудиторией в бизнес-среде. Является приглашенным спикером на
-							форумах и
-							конференциях, а также членом жюри театральных фестивалей в Европе.
-						</p>
-						<div class="master-course__description">Интервью о профессии и кучу интересных проектов Анастасии
-							можно найти в Европейской прессе! <a href="#">La Vanguardia,</a> <a href="#">Agencia EFE,</a>
-							El Pais, Radio Espanola и других SMI. </div>
-						<div class="master-course__list">
-							<span>Образование:</span>
-							<ul>
-								<li>Высшее театральное (курс К.А. Райкина)</li>
-								<li>Высшее педагогическое МГПУ</li>
-								<li>Дополнительное образование в области
-									театра кукол в Праге</li>
-								<li>Лондонская школа мимики и жеста (курс Нолы Рай, ученицы Марселя Марсо)</li>
-								<li>Институт Новой клоунады в
-									Испании</li>
-							</ul>
-						</div>
-					</div>
-					<div class="master-course__image">
-						<picture><source srcset="img/master-course/01.webp" type="image/webp"><img src="img/master-course/01.jpg" alt="image"></picture>
-					</div>
-				</div>
-			</section>
-			<section class="teachers">
-				<div class="teachers__container">
-					<h2 class="teachers__subtitle">Преподователи курса</h2>
-					<div class="teachers__wrapper">
-						<div class="teachers__items">
-							<div class="teachers__item">
-								<div class="teachers__image">
-									<picture><source srcset="img/teachers/01.webp" type="image/webp"><img src="img/teachers/01.jpg" alt="image"></picture>
-								</div>
-								<div class="teachers__name">Александр Белкин</div>
-								<p class="teachers__description">Мастер класс по работе с текстом. Оживающий текст. Актёр театра
-									и
-									кино, режиссёр, педагог. Учился в МГУ, работал на
-									кафедре режиссуры ТИ им.Б.Щукина. Сейчас преподаёт актёрское мастерство, сценическую речь и
-									художественное слово.
-									Ученики Александра каждый год поступают в театральные ВУЗы.</p>
-							</div>
-							<div class="teachers__item">
-								<div class="teachers__image">
-									<picture><source srcset="img/teachers/02.webp" type="image/webp"><img src="img/teachers/02.jpg" alt="image"></picture>
-								</div>
-								<div class="teachers__name">Евгения Асеева</div>
-								<p class="teachers__description">
-									Психолог, писатель, бизнес-тренер, лектор института Smart. Coавтор проекта "Семь психологов",
-									мама Евы и Аси. Является 
-									действующим и высоко востребованным психологом международного уровня.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<div class="join">
-				<div class="join__container">
-					<div class="join__wrapper">
-
-						<div class="join__title">Записаться в группу 2 раза в неделю по 2 часа</div>
-						<div class="join__items">
-							<div class="join__content">
-								<div class="join__label">
-									Индивидуальные уроки 45 мин 
-								</div>
-								<div class="join__icon">
-									<img src="img/teachers/icon.svg" alt="icon">
-								</div>
-								<ul class="join__list">
-									<li>Пробный индивидуальный урок + диагностика  45 мин </li>
-									<li>Урок - диагностика для определения целей</li>
-									<li>При записи на курс до 10 января стоимость со скидкой 25%</li>
+			<div class="page__wrapper">
+				<section class="master-course">
+					<div class="master-course__container">
+						<div class="master-course__content">
+							<div class="master-course__label">Мастер курса</div>
+							<div class="master-course__name">Анастасия Христова</div>
+							<p class="master-course__text">
+								Театральный режиссёр, актриса и независимый автор документального кино. Основатель продюсерской
+								компании PointProduction
+								и Семейного Театра Колыбель. Гастролирующая актриса и тренер по публичным выступлениям в
+								бизнес-сообществах и
+								театральных школах. Проводит тренинги по клоунаде для артистов. Также ведет курс по коммуникации,
+								основанный на
+								театральных методах взаимодействия с аудиторией в бизнес-среде. Является приглашенным спикером на
+								форумах и
+								конференциях, а также членом жюри театральных фестивалей в Европе.
+							</p>
+							<div class="master-course__description">Интервью о профессии и кучу интересных проектов Анастасии
+								можно найти в Европейской прессе! <a href="#">La Vanguardia,</a> <a href="#">Agencia EFE,</a>
+								El Pais, Radio Espanola и других SMI. </div>
+							<div class="master-course__list">
+								<span>Образование:</span>
+								<ul>
+									<li>Высшее театральное (курс К.А. Райкина)</li>
+									<li>Высшее педагогическое МГПУ</li>
+									<li>Дополнительное образование в области
+										театра кукол в Праге</li>
+									<li>Лондонская школа мимики и жеста (курс Нолы Рай, ученицы Марселя Марсо)</li>
+									<li>Институт Новой клоунады в
+										Испании</li>
 								</ul>
 							</div>
-							<div class="payment">
-								<div class="payment__icon">
-									<img src="img/teachers/payment.svg" alt="icon">
+						</div>
+						<div class="master-course__image">
+							<picture><source srcset="img/master-course/01.webp" type="image/webp"><img src="img/master-course/01.jpg" alt="image"></picture>
+						</div>
+					</div>
+				</section>
+				<svg class="master-decor-left" width="1107" height="1638" viewBox="0 0 1107 1638" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g filter="url(#filter0_f_1_470)">
+						<circle cx="288" cy="819" r="419" fill="#6A2891" fill-opacity="0.77" />
+					</g>
+					<defs>
+						<filter id="filter0_f_1_470" x="-531" y="0" width="1638" height="1638" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+							<feFlood flood-opacity="0" result="BackgroundImageFix" />
+							<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+							<feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_1_470" />
+						</filter>
+					</defs>
+				</svg>
+				<svg class="master-decor-right" width="869" height="1638" viewBox="0 0 869 1638" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g filter="url(#filter0_f_1_471)">
+						<circle cx="819" cy="819" r="419" fill="#468875" />
+					</g>
+					<defs>
+						<filter id="filter0_f_1_471" x="0" y="0" width="1638" height="1638" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+							<feFlood flood-opacity="0" result="BackgroundImageFix" />
+							<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+							<feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_1_471" />
+						</filter>
+					</defs>
+				</svg>
+			</div>
+			<div class="page__wrapper">
+				<section class="teachers">
+					<div class="teachers__container">
+						<h2 class="teachers__subtitle">Преподователи курса</h2>
+						<div class="teachers__wrapper">
+							<div class="teachers__items">
+								<div class="teachers__item">
+									<div class="teachers__image">
+										<picture><source srcset="img/teachers/01.webp" type="image/webp"><img src="img/teachers/01.jpg" alt="image"></picture>
+									</div>
+									<div class="teachers__name">Александр Белкин</div>
+									<p class="teachers__description">Мастер класс по работе с текстом. Оживающий текст. Актёр театра
+										и
+										кино, режиссёр, педагог. Учился в МГУ, работал на
+										кафедре режиссуры ТИ им.Б.Щукина. Сейчас преподаёт актёрское мастерство, сценическую речь и
+										художественное слово.
+										Ученики Александра каждый год поступают в театральные ВУЗы.</p>
 								</div>
-								<div class="payment__title">
-									Способы оплаты
+								<div class="teachers__item">
+									<div class="teachers__image">
+										<picture><source srcset="img/teachers/02.webp" type="image/webp"><img src="img/teachers/02.jpg" alt="image"></picture>
+									</div>
+									<div class="teachers__name">Евгения Асеева</div>
+									<p class="teachers__description">
+										Психолог, писатель, бизнес-тренер, лектор института Smart. Coавтор проекта "Семь психологов",
+										мама Евы и Аси. Является 
+										действующим и высоко востребованным психологом международного уровня.
+									</p>
 								</div>
-								<div class="payment__actions">
-									<button class="payment__button button button_blue">Европейской картой</button>
-									<button class="payment__button button button_yellow">Российская  карта</button>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="join">
+					<div class="join__container">
+						<div class="join__wrapper">
+
+							<div class="join__title">Записаться в группу 2 раза в неделю по 2 часа</div>
+							<div class="join__items">
+								<div class="join__content">
+									<div class="join__label">
+										Индивидуальные уроки 45 мин 
+									</div>
+									<div class="join__icon">
+										<img src="img/teachers/icon.svg" alt="icon">
+									</div>
+									<ul class="join__list">
+										<li>Пробный индивидуальный урок + диагностика  45 мин </li>
+										<li>Урок - диагностика для определения целей</li>
+										<li>При записи на курс до 10 января стоимость со скидкой 25%</li>
+									</ul>
+								</div>
+								<div class="payment">
+									<div class="payment__icon">
+										<img src="img/teachers/payment.svg" alt="icon">
+									</div>
+									<div class="payment__title">
+										Способы оплаты
+									</div>
+									<div class="payment__actions">
+										<button class="payment__button button button_blue">Европейской картой</button>
+										<button class="payment__button button button_yellow">Российская  карта</button>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<svg class="inner-decor-left" width="1107" height="1638" viewBox="0 0 1107 1638" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g filter="url(#filter0_f_1_473)">
+						<circle cx="419" cy="419" r="419" transform="matrix(-1 0 0 1 707 400)" fill="#468875" />
+					</g>
+					<defs>
+						<filter id="filter0_f_1_473" x="-531" y="0" width="1638" height="1638" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+							<feFlood flood-opacity="0" result="BackgroundImageFix" />
+							<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+							<feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_1_473" />
+						</filter>
+					</defs>
+				</svg>
+				<svg class="inner-decor-right" width="869" height="1638" viewBox="0 0 869 1638" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g filter="url(#filter0_f_1_472)">
+						<circle cx="419" cy="419" r="419" transform="matrix(-1 0 0 1 1238 400)" fill="#6A2891" fill-opacity="0.77" />
+					</g>
+					<defs>
+						<filter id="filter0_f_1_472" x="0" y="0" width="1638" height="1638" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+							<feFlood flood-opacity="0" result="BackgroundImageFix" />
+							<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+							<feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_1_472" />
+						</filter>
+					</defs>
+				</svg>
 			</div>
 			<section class="order-training">
 				<div class="order-training__container">
@@ -587,6 +681,31 @@
 					</div>
 				</div>
 			</section>
+			<!-- decors -->
+			<svg class="main-left" width="1107" height="1175" viewBox="0 0 1107 1175" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g filter="url(#filter0_f_1_475)">
+					<circle cx="288" cy="356" r="419" fill="#6A2891" fill-opacity="0.77" />
+				</g>
+				<defs>
+					<filter id="filter0_f_1_475" x="-531" y="-463" width="1638" height="1638" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+						<feFlood flood-opacity="0" result="BackgroundImageFix" />
+						<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+						<feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_1_475" />
+					</filter>
+				</defs>
+			</svg>
+			<svg class="main-right" width="869" height="966" viewBox="0 0 869 966" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g filter="url(#filter0_f_1_476)">
+					<circle cx="819" cy="147" r="419" fill="#468875" />
+				</g>
+				<defs>
+					<filter id="filter0_f_1_476" x="0" y="-672" width="1638" height="1638" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+						<feFlood flood-opacity="0" result="BackgroundImageFix" />
+						<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+						<feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_1_476" />
+					</filter>
+				</defs>
+			</svg>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -617,17 +736,7 @@
 			</div>
 		</footer>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
-			</div>
-		</div>
-	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20250109133451"></script>
+	<script src="js/app.min.js?_v=20250109153441"></script>
 </body>
 
 </html> 
