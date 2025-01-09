@@ -1243,9 +1243,22 @@ body {
   background: #2e2e2e;
   display: block;
   position: relative;
+  overflow: hidden;
   padding-bottom: 56.25%;
   /* Соотношение сторон 16:9 */
   border-radius: 30px;
+}
+
+.video-placeholder img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 100%;
 }
 
 .video-placeholder iframe {
@@ -1260,6 +1273,7 @@ body {
 .load-video-btn {
   position: absolute;
   top: 50%;
+  z-index: 2;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -1268,6 +1282,7 @@ body {
   height: 10rem;
   border-radius: 50%;
   border: 0.0625rem solid #828282;
+  background-color: rgba(255, 255, 255, 0.3294117647);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
