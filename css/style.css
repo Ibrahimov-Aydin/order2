@@ -670,8 +670,6 @@ body {
 .hero {
   padding-top: 10.8125rem;
   padding-bottom: 4.75rem;
-  position: relative;
-  z-index: 5;
 }
 
 .hero__title {
