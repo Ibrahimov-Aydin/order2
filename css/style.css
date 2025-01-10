@@ -3628,11 +3628,15 @@ body {
 
 @media (max-width: 29.99875em) {
   .title {
-    font-size: 1.625rem !important;
+    font-size: 26.8px !important;
   }
 }
 
 @media (max-width: 27.4375em) {
+  .title {
+    font-size: 1.5rem;
+  }
+
   .achievements__title {
     font-size: 2.5rem;
   }
