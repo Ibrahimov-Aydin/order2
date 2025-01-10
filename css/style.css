@@ -142,7 +142,7 @@ h6 {
   position: absolute;
   width: 838px;
   height: 838px;
-  background-color: red;
+  background: radial-gradient(circle, rgba(106, 40, 145, 0.77) 40%, rgba(106, 40, 145, 0.3) 80%);
   -webkit-filter: blur(150px);
           filter: blur(150px);
   border-radius: 50%;
