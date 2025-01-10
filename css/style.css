@@ -2520,7 +2520,7 @@ body {
   .page__container::before {
     content: "";
     position: absolute;
-    top: 416px;
+    top: 392px;
     left: 0;
     background: url("../img/decors/decor-line.svg") 0 0 no-repeat;
     width: 1285px;
