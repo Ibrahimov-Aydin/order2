@@ -142,7 +142,7 @@ h6 {
   position: absolute;
   width: 838px;
   height: 838px;
-  background: radial-gradient(circle, rgba(106, 40, 145, 0.77) 40%, rgba(106, 40, 145, 0.3) 80%);
+  background-color: red;
   -webkit-filter: blur(150px);
           filter: blur(150px);
   border-radius: 50%;
@@ -150,8 +150,8 @@ h6 {
 }
 
 .main-left_page {
-  top: -63px;
-  left: -131px;
+  top: -63px !important;
+  left: -131px !important;
 }
 
 .main-left_benefits {
@@ -2928,8 +2928,8 @@ body {
 
 @media (max-width: 61.99875em) {
   .main-left_page {
-    top: -502px;
-    left: -417px;
+    top: -502px !important;
+    left: -417px !important;
   }
 
   .main-right_page {
@@ -3261,12 +3261,6 @@ body {
 }
 
 @media (max-width: 47.99875em) {
-  .main-left_page {
-    top: 0;
-    left: 0;
-    display: block !important;
-  }
-
   .callback {
     font-size: 0.875rem;
     -webkit-box-flex: 1;
