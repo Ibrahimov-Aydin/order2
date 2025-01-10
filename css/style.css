@@ -558,12 +558,12 @@ body {
   }
 }
 
-.loaded [fadeinup]._watcher-view {
+.loaded .fadeinup._watcher-view {
   -webkit-animation: fadeinup 1s ease-in-out forwards;
           animation: fadeinup 1s ease-in-out forwards;
 }
 
-[fadeinup] {
+.fadeinup {
   opacity: 0;
   /* Start with opacity 0 */
   -webkit-transform: translate(0, 20%);
