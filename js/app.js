@@ -3506,8 +3506,8 @@
         const iframe = document.querySelector(".video-frame");
         placeholder.style.display = "none";
         playButton.style.display = "none";
+        iframe.src = iframe.getAttribute("data-src") + "?autoplay=1";
         iframe.style.display = "block";
-        iframe.src += "?autoplay=1";
     }));
     window["FLS"] = false;
     isWebp();
