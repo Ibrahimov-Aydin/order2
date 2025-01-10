@@ -3628,7 +3628,7 @@ body {
 
 @media (max-width: 29.99875em) {
   .title {
-    font-size: 26px;
+    font-size: 1.675rem !important;
   }
 }
 
