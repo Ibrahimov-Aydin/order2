@@ -528,6 +528,19 @@ body {
   transition: background 0.5s ease 0s;
 }
 
+.play-icon {
+  display: block;
+  aspect-ratio: 1/1;
+  width: 0.875rem;
+  height: 0.9375rem;
+  mask: var(--icon) center center/contain no-repeat;
+  -webkit-mask: var(--icon) center center/contain no-repeat;
+  background: #fff;
+  pointer-events: all;
+  -webkit-transition: background 0.5s ease 0s;
+  transition: background 0.5s ease 0s;
+}
+
 @-webkit-keyframes fadeinup {
   0% {
     opacity: 0;
@@ -1253,7 +1266,6 @@ body {
   /* Соотношение сторон 16:9 */
   border-radius: 30px;
   overflow: hidden;
-  background: #2e2e2e;
 }
 
 .video-placeholder {
@@ -1280,7 +1292,6 @@ body {
   height: 10rem;
   border-radius: 50%;
   border: 0.0625rem solid #828282;
-  background-color: rgba(255, 255, 255, 0.3294117647);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1295,6 +1306,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 2;
+  -webkit-transition: background-color 0.5s ease 0s;
+  transition: background-color 0.5s ease 0s;
 }
 
 .load-video-btn img {
@@ -2639,6 +2652,10 @@ body {
 }
 
 @media (max-width: 91.25em) {
+  .main-right_page {
+    right: -200px;
+  }
+
   .callback {
     padding: 1.125rem 0.9375rem 1.125rem 0.9375rem;
     font-size: 12px;
@@ -3774,6 +3791,14 @@ body {
 
   .reviews__navigation button:hover .review-arrow-icon {
     background: #fff;
+  }
+
+  .load-video-btn:hover {
+    background-color: #fff;
+  }
+
+  .load-video-btn:hover .play-icon {
+    background: #000;
   }
 
   .experts__navigation button:hover {
