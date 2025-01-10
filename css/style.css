@@ -141,10 +141,8 @@ h6 {
 .main-left {
   position: absolute;
   width: 838px;
-  /* Установите размеры по вашему усмотрению */
   height: 838px;
   background: radial-gradient(circle, rgba(106, 40, 145, 0.77) 40%, rgba(106, 40, 145, 0.3) 80%);
-  /* Градиент для плавного перехода */
   -webkit-filter: blur(150px);
           filter: blur(150px);
   border-radius: 50%;
@@ -3263,6 +3261,12 @@ body {
 }
 
 @media (max-width: 47.99875em) {
+  .main-left_page {
+    top: 0;
+    left: 0;
+    display: block !important;
+  }
+
   .callback {
     font-size: 0.875rem;
     -webkit-box-flex: 1;
