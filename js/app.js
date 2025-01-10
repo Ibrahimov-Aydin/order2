@@ -3500,22 +3500,14 @@
     }
     const da = new DynamicAdapt("max");
     da.init();
-    document.addEventListener("DOMContentLoaded", (() => {
-        const buttons = document.querySelectorAll(".load-video-btn");
-        buttons.forEach((button => {
-            button.addEventListener("click", (() => {
-                const videoId = button.getAttribute("data-video-id");
-                const placeholder = button.nextElementSibling;
-                if (placeholder && videoId) {
-                    button.style.display = "none";
-                    const iframe = document.createElement("iframe");
-                    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-                    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-                    iframe.allowFullscreen = true;
-                    placeholder.appendChild(iframe);
-                }
-            }));
-        }));
+    document.querySelector(".load-video-btn").addEventListener("click", (function() {
+        const placeholder = document.querySelector(".video-placeholder");
+        const playButton = document.querySelector(".load-video-btn");
+        const iframe = document.querySelector(".video-frame");
+        placeholder.style.display = "none";
+        playButton.style.display = "none";
+        iframe.style.display = "block";
+        iframe.src += "?autoplay=1";
     }));
     window["FLS"] = false;
     isWebp();

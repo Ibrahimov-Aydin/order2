@@ -1236,38 +1236,23 @@ body {
 .video-container {
   text-align: center;
   position: relative;
-}
-
-.video-placeholder {
-  width: 100%;
-  background: #2e2e2e;
-  display: block;
-  position: relative;
-  overflow: hidden;
   padding-bottom: 56.25%;
   /* Соотношение сторон 16:9 */
   border-radius: 30px;
+  overflow: hidden;
+  background: #2e2e2e;
 }
 
-.video-placeholder img {
+.video-placeholder {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  height: 100%;
-}
-
-.video-placeholder iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
 }
 
 .load-video-btn {
@@ -1303,6 +1288,21 @@ body {
   -webkit-transform: translateX(2px);
       -ms-transform: translateX(2px);
           transform: translateX(2px);
+}
+
+.video-frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  /* Скрыто по умолчанию */
+  aspect-ratio: 16/9;
+  /* Сохраняет пропорции */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Избегает пустого пространства сверху и снизу */
 }
 
 .experts {
@@ -3067,10 +3067,6 @@ body {
     padding-top: 7.9375rem;
   }
 
-  .reviews__navigation {
-    display: none;
-  }
-
   .achievements {
     padding: 4.375rem 0;
   }
@@ -3324,6 +3320,10 @@ body {
     margin-bottom: 0px;
   }
 
+  .content-hero__title {
+    font-size: 1.225rem;
+  }
+
   .reviews {
     padding-bottom: 4.125rem;
   }
@@ -3339,6 +3339,14 @@ body {
 
   .reviews__slide {
     padding-bottom: 107.9%;
+  }
+
+  .reviews__navigation button {
+    width: 60px;
+    height: 60px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60px;
+            flex: 0 0 60px;
   }
 
   .achievements {
@@ -3414,10 +3422,6 @@ body {
 
   .author__text {
     line-height: 140%;
-  }
-
-  .video-placeholder {
-    padding-bottom: 74%;
   }
 
   .experts {
@@ -3624,7 +3628,7 @@ body {
 
 @media (max-width: 29.99875em) {
   .title {
-    font-size: 1.875rem;
+    font-size: 26px;
   }
 }
 

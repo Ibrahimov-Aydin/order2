@@ -5,8 +5,8 @@
 	<title>HomePage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20250109213309" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20250109213309">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20250110062105" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20250110062105">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -119,14 +119,35 @@
 							уникальную методику живого общения с учениками, которое даст вам множество навыков успешной
 							самопрезентации</p>
 
+						<!-- <div class="video-container">
+			<button class="load-video-btn" data-video-id="p5_wsn9p3ag">
+				<img src="img/icons/play.svg" alt="icon:play">
+			</button>
+			<div style="position: relative; padding-top: 56.25%; width: 100%"><iframe
+					src="https://kinescope.io/embed/12otTpDC36v4kk4MJxzWes"
+					allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;"
+					frameborder="0" allowfullscreen
+					style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;"></iframe>
+			</div>
+
+			<div class="video-placeholder">
+				<picture><source srcset="img/video/cideo.webp" type="image/webp"><img src="img/video/cideo.png" alt="image"></picture>
+			</div>
+		</div> -->
+
 						<div class="video-container">
-							<button class="load-video-btn" data-video-id="p5_wsn9p3ag">
+							<!-- Видео-плейсхолдер -->
+							<picture><source srcset="img/video/cideo.webp" type="image/webp"><img class="video-placeholder" src="img/video/cideo.png" alt="image"></picture>
+
+							<!-- Кнопка запуска -->
+							<button class="load-video-btn">
 								<img src="img/icons/play.svg" alt="icon:play">
 							</button>
-							<div class="video-placeholder">
-								<picture><source srcset="img/video/cideo.webp" type="image/webp"><img src="img/video/cideo.png" alt="image"></picture>
-							</div>
+
+							<!-- Видеоплеер -->
+							<iframe src="https://kinescope.io/embed/12otTpDC36v4kk4MJxzWes" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;" frameborder="0" allowfullscreen class="video-frame" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; display: none;"></iframe>
 						</div>
+
 
 
 					</div>
@@ -740,7 +761,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250109213309"></script>
+	<script src="js/app.min.js?_v=20250110062105"></script>
 </body>
 
 </html> 
