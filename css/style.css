@@ -142,7 +142,7 @@ h6 {
   position: absolute;
   width: 838px;
   height: 838px;
-  background: radial-gradient(circle, rgba(106, 40, 145, 0.77) 40%, rgba(106, 40, 145, 0.3) 80%);
+  background: radial-gradient(circle, rgba(106, 40, 145, 0.77) 40%, rgba(106, 40, 145, 0.3) 80%) !important;
   -webkit-filter: blur(150px);
           filter: blur(150px);
   border-radius: 50%;
@@ -1322,8 +1322,6 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  display: none;
-  /* Скрыто по умолчанию */
   aspect-ratio: 16/9;
   /* Сохраняет пропорции */
   -o-object-fit: cover;

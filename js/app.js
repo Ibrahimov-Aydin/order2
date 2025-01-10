@@ -3500,15 +3500,6 @@
     }
     const da = new DynamicAdapt("max");
     da.init();
-    document.querySelector(".load-video-btn").addEventListener("click", (function() {
-        const placeholder = document.querySelector(".video-placeholder");
-        const playButton = document.querySelector(".load-video-btn");
-        const iframe = document.querySelector(".video-frame");
-        placeholder.style.display = "none";
-        playButton.style.display = "none";
-        iframe.src = iframe.getAttribute("data-src") + "?autoplay=1";
-        iframe.style.display = "block";
-    }));
     window["FLS"] = false;
     isWebp();
     addLoadedClass();
